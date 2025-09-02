@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Time</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #343434;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .time {
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            color: rgb(219, 219, 219);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="content">
+        <div class="time">
+            <p>Time (24h Format): </p>
+            <div>
+                <span id="hrs24"></span>
+                :
+                <span class="mins"></span>
+                :
+                <span class="secs"></span>
+            </div>
+        </div>
+
+        <div class="time">
+            <p>Time (12h Format): </p>
+            <div>
+                <span id="hrs12"></span>
+                :
+                <span class="mins"></span>
+                :
+                <span class="secs"></span>
+                <span id="state"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
