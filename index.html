@@ -19,6 +19,7 @@
             align-items: center;
             height: 100vh;
             background-color: #343434;
+            padding: 10px;
         }
 
         .content {
@@ -29,6 +30,10 @@
             gap: 20px;
         }
 
+        .content h1 {
+            color: white;
+        }
+
         .time {
             font-size: 30px;
             display: flex;
@@ -37,13 +42,13 @@
             gap: 15px;
             color: rgb(219, 219, 219);
         }
-
     </style>
 </head>
 
 <body>
 
     <div class="content">
+        <h1>Date: <span id="currentDate"></span></h1>
         <div class="time">
             <p>Time (24h Format): </p>
             <div>
