@@ -15,12 +15,12 @@ function updateTime() {
 
     try {
         let dateArr = `${date}`.split(" ");
-        currentDate.innerHTML = `${dateArr[0]} ( ${dateArr[1]} / ${dateArr[2]} / ${dateArr[3]} ) (${dateArr[5]})`;
+        currentDate.innerHTML = `${dateArr[0]} ( ${dateArr[1]} / ${dateArr[2]} / ${dateArr[3]} )`;
     } catch (err) {
         console.log(err)
     }
 
-    
+
     secs.forEach((sec) => {
         sec.innerHTML = currentSeconds < 10 ? `0${currentSeconds}` : currentSeconds;
     })
