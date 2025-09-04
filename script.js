@@ -33,7 +33,7 @@ function updateTime() {
 
     hrs24.innerHTML = currentHours < 10 ? `0${currentHours}` : currentHours;
     if (currentHours <= 12) {
-        hrs12.innerHTML = currentHours < 10 ? `0${currentHours}` : currentHours;
+        hrs12.innerHTML = currentHours < 10 ? (currentHours === 0 ? "12" : `0${currentHours}`) : currentHours;
         state.innerHTML = "AM";
     } else {
         hrs12.innerHTML = currentHours - 12;
@@ -45,4 +45,5 @@ updateTime();
 
 setInterval(() => {
     updateTime();
+
 }, 1000)
